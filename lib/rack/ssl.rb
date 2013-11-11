@@ -29,7 +29,7 @@ module Rack
         flag_cookies_as_secure!(headers)
         [status, headers, body]
       else
-        redirect_to_https(env)
+        # redirect_to_https(env)
       end
     end
 
