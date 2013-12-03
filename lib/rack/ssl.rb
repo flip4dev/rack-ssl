@@ -30,6 +30,7 @@ module Rack
         [status, headers, body]
       else
         # redirect_to_https(env)
+        @app.call(env)
       end
     end
 
